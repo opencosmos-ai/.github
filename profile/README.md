@@ -24,7 +24,7 @@ Source texts translated in public, from the Chinese, with the reasoning left in.
 
 Each translation project keeps a glossary of settled terms, a written method, and a set of principles derived from actual decisions — so a reader can see not just what a word was rendered as, but why, and what was rejected.
 
-- **[Tao Te Ching](https://github.com/shalomormsby/taoteching)** — all 81 chapters drafted, with a radical-level glossary and a public record of where earlier translators imported assumptions the Chinese does not carry. Dedicated to the public domain under CC0.
+- **[Tao Te Ching](https://github.com/opencosmos-ai/taoteching)** — all 81 chapters drafted, with a radical-level glossary and a public record of where earlier translators imported assumptions the Chinese does not carry. Dedicated to the public domain under CC0.
 - **I Ching** — in progress. Read through the Ten Wings, with the interpretive lens declared rather than smuggled in. Three public-domain translations (1876, 1882, 1889) are vendored and OCR'd against the original scans so their disagreements can be argued with in the open.
 
 ### Cosmo
@@ -56,7 +56,11 @@ Open an issue before a large change. Small corrections can go straight to a pull
 
 ## Where things live
 
-These repositories are migrating into this organization. Links above point to their current homes and will be updated as each one moves.
+- **[opencosmos](https://github.com/opencosmos-ai/opencosmos)** — the applications, the knowledge corpus, and Cosmo
+- **[taoteching](https://github.com/opencosmos-ai/taoteching)** — the Tao Te Ching translation
+- **[opencosmos-ui](https://github.com/shalomormsby/opencosmos-ui)** — the design system, still migrating
+
+The corpus and the translation projects are being split into repositories of their own, so that adding a text or arguing with a rendering does not mean cloning a five-application monorepo. Until that lands, everything is in `opencosmos` under `knowledge/`.
 
 ---
 
