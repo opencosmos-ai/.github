@@ -25,15 +25,15 @@ Source texts translated in public, from the Chinese, with the reasoning left in.
 Each translation project keeps a glossary of settled terms, a written method, and a set of principles derived from actual decisions — so a reader can see not just what a word was rendered as, but why, and what was rejected.
 
 - **[Tao Te Ching](https://github.com/opencosmos-ai/taoteching)** — all 81 chapters drafted, with a radical-level glossary and a public record of where earlier translators imported assumptions the Chinese does not carry. Dedicated to the public domain under CC0.
-- **I Ching** — in progress. Read through the Ten Wings, with the interpretive lens declared rather than smuggled in. Three public-domain translations (1876, 1882, 1889) are vendored and OCR'd against the original scans so their disagreements can be argued with in the open.
+- **[I Ching](https://github.com/opencosmos-ai/iching)** — in progress. Read through the Ten Wings, with the interpretive lens declared rather than smuggled in. Three public-domain translations (1876, 1882, 1889) are vendored and OCR'd against the original scans so their disagreements can be argued with in the open.
 
 ### Cosmo
 
-A constitutional AI layer: a system prompt, an ethics, a wisdom-language framework, and a triad of inner voices — versioned in public and deliberately model-independent. Cosmo reads the corpus and cites it.
+A constitutional AI layer: a system prompt, an ethics, a wisdom-language framework, and a triad of inner voices — versioned in public in **[cosmo](https://github.com/opencosmos-ai/cosmo)** and deliberately model-independent. Cosmo reads the corpus and cites it.
 
 ### The design system
 
-**[@opencosmos/ui](https://github.com/shalomormsby/opencosmos-ui)** — an AI-fluent component library, published to npm, with its own documentation site.
+**[@opencosmos/ui](https://github.com/opencosmos-ai/opencosmos-ui)** — an AI-fluent component library, published to npm, with its own documentation site.
 
 ---
 
@@ -48,7 +48,7 @@ The translation projects are the most directly contributable. A useful contribut
 - flag an overlay — a place where a translation carries an assumption the original does not
 - add a public-domain source text, with its provenance
 
-The corpus has admission rules, and they are stricter than copyright law requires. A file is only included if the work is public domain by age, the specific edition is nameable, and any modern editorial layer is absent, excluded, or marked. Punctuation especially. The rules are written down in each project's `PROVENANCE.md`, and they have been wrong before and say so in public.
+The corpus has admission rules, and they are stricter than copyright law requires. A file is only included if the work is public domain by age, the specific edition is nameable, and any modern editorial layer is absent, excluded, or marked. Punctuation especially. The rules are written down in each translation's `PROVENANCE.md` ([Tao Te Ching](https://github.com/opencosmos-ai/taoteching/blob/main/sources/PROVENANCE.md), [I Ching](https://github.com/opencosmos-ai/iching/blob/main/sources/PROVENANCE.md)) and in the corpus's [ethical curation guide](https://github.com/opencosmos-ai/knowledge/blob/main/guides/opencosmos-knowledge-ethical-curation.md), and they have been wrong before and say so in public.
 
 Open an issue before a large change. Small corrections can go straight to a pull request.
 
@@ -56,11 +56,16 @@ Open an issue before a large change. Small corrections can go straight to a pull
 
 ## Where things live
 
-- **[opencosmos](https://github.com/opencosmos-ai/opencosmos)** — the applications, the knowledge corpus, and Cosmo
-- **[taoteching](https://github.com/opencosmos-ai/taoteching)** — the Tao Te Ching translation
-- **[opencosmos-ui](https://github.com/shalomormsby/opencosmos-ui)** — the design system, still migrating
+Split by what you are invited to do with it, so that a `git clone` gets you exactly that.
 
-The corpus and the translation projects are being split into repositories of their own, so that adding a text or arguing with a rendering does not mean cloning a five-application monorepo. Until that lands, everything is in `opencosmos` under `knowledge/`.
+| Repository | What it holds | License |
+|---|---|---|
+| **[knowledge](https://github.com/opencosmos-ai/knowledge)** | the Library's corpus — sources, quotes, wiki — and its tools | CC0 |
+| **[taoteching](https://github.com/opencosmos-ai/taoteching)** | the Tao Te Ching translation | CC0 |
+| **[iching](https://github.com/opencosmos-ai/iching)** | the I Ching translation | CC0 |
+| **[cosmo](https://github.com/opencosmos-ai/cosmo)** | Cosmo's constitution — system prompt, triad, practice | CC BY-SA 4.0 |
+| **[opencosmos](https://github.com/opencosmos-ai/opencosmos)** | opencosmos.ai, the site that serves all of the above | MIT |
+| **[opencosmos-ui](https://github.com/opencosmos-ai/opencosmos-ui)** | the design system | MIT |
 
 ---
 
